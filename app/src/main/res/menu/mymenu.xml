@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/wb_main"
+            android:checked="true"
+            android:title="微博首页"
+            android:icon="@drawable/ic_local_bar_white_24dp">
+
+        </item>
+        <item android:id="@+id/wb_hot"
+            android:title="热门微博"
+            android:icon="@drawable/ic_local_car_wash_white_24dp">
+
+        </item>
+        <item android:id="@+id/wb_save"
+            android:title="我的收藏"
+            android:icon="@drawable/ic_volume_mute_white_24dp">
+
+        </item>
+        <item android:id="@+id/wb_change"
+            android:title="切换账号"
+            android:icon="@drawable/ic_volume_up_white_24dp">
+
+        </item>
+    </group>
+
+</menu>

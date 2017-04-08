@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.lee.myweibo.widgets.MyViewPager
+            android:id="@+id/vp_photosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.lee.myweibo.widgets.MyViewPager>
+        <TextView
+            android:id="@+id/tv_whichPhoto"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:text="第几张"
+            android:textStyle="italic"
+
+            style="@android:style/TextAppearance.DeviceDefault.Large.Inverse"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/fab_save"
+            android:src="@drawable/ic_save"
+            android:layout_margin="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

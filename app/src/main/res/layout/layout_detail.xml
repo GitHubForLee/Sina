@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorOrange"
+        android:layout_width="match_parent"
+        android:id="@+id/tl_weiboDetail"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_weiboDetail"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </com.github.jdsjlzx.recyclerview.LRecyclerView>
+
+    <LinearLayout
+        android:divider="@drawable/v_divider"
+        android:dividerPadding="8dp"
+        android:showDividers="middle"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:layout_width="0dp"
+            android:textColor="@color/colorOrange"
+
+            android:text="转发"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:drawablePadding="5dp"
+            android:id="@+id/tv_coment"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/colorOrange"
+            android:text="评论"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
